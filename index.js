@@ -14,7 +14,12 @@ const questions = [
     {
       type: 'input',
       name: 'description',
-      message: 'Write a breif description of the project',
+      message: 'Write a breif description of the project.',
+    },
+    {
+      type: 'input',
+      name: 'Installation',
+      message: 'Explain how to install the project.',
     },
     {
       type: 'input',
@@ -22,14 +27,20 @@ const questions = [
       message: 'Explain how to use the app',
     },
     {
-      type: 'input',
-      name: 'features',
-      message: 'Explain the  features of the app',
+      type: 'checkbox',
+      name: 'license',
+      message: 'Choose a license for your project.',
+      choices: ['MIT', 'Mozilla', 'Apache'],
     },
     {
       type: 'input',
-      name: 'built with',
-      message: 'What applications were used to build the app?',
+      name: 'tests',
+      message: 'Write examples and how to run tests for your application.',
+    },
+    {
+      type: 'input',
+      name: 'Contributions',
+      message: 'List the names of the contributer(s).',
     },
     {
       type: 'input',
@@ -46,12 +57,7 @@ const questions = [
       name: 'email',
       message: 'Enter your email address?',
     },
-    {
-      type: 'checkbox',
-      name: 'license',
-      message: 'Choose a license for your project.',
-      choices: ['MIT', 'Mozilla', 'Apache'],
-    },
+    
 ];
 
 // function to write README file
