@@ -1,5 +1,13 @@
+var licenseBadge();
+function getLicenseBadge(data) {
+  if (data.license === 'MIT') {
+    licenseBadge = `[License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)` 
+  }
+}
+
 // function to generate markdown for README
 function generateMarkdown(data) {
+  getLicenseBadge(data)
   return `# ${data.title}
   ## Description
   ${data.description}
@@ -29,6 +37,7 @@ function generateMarkdown(data) {
   
   ## License
   This project is licensed under the ${data.license} license.
+  ${licenseBadge}
 
 `;
 }
