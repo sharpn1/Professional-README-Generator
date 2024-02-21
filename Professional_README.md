@@ -1,6 +1,6 @@
-# readme generator
+# read me
   ## Description
-  generates a readme
+  fgggerghreh
   
   ## Table of Contents
   - [Installation](#installation)
@@ -11,20 +11,21 @@
   - [Questions](#questions)
   
   ## Usage
-  run it by typing node index.js
+  fhfhthh
 
   ## Features
-  generates a nice read me
+  gjgfsjk
   
   ## Built With
   undefined
 
   ## Authors
   undefined
-  GitHub: [bfdbhngfnjghf](https://github.com/bfdbhngfnjghf)
-  link: [bgcfnjgfjkgh](https://undefined)
-  Email: bngfjyghykhjl
+  GitHub: [gggggggggg](https://github.com/gggggggggg)
+  link: [hjhkukl](https://undefined)
+  Email: gmjghmkgh
   
   ## License
-  This project is licensed under the MIT license.
+  This project is licensed under the  license.
+  undefined
 

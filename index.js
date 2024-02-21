@@ -47,10 +47,10 @@ const questions = [
       message: 'Enter your email address?',
     },
     {
-      type: 'list',
+      type: 'checkbox',
       name: 'license',
       message: 'Choose a license for your project.',
-      choices: ['MIT', 'GPLv2', 'Apache'],
+      choices: ['MIT', 'Mozilla', 'Apache'],
     },
 ];
 
