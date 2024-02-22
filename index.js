@@ -18,7 +18,7 @@ const questions = [
     },
     {
       type: 'input',
-      name: 'Installation',
+      name: 'install',
       message: 'Explain how to install the project.',
     },
     {
@@ -27,7 +27,7 @@ const questions = [
       message: 'Explain how to use the app',
     },
     {
-      type: 'checkbox',
+      type: 'list',
       name: 'license',
       message: 'Choose a license for your project.',
       choices: ['MIT', 'Mozilla', 'Apache'],
@@ -39,7 +39,7 @@ const questions = [
     },
     {
       type: 'input',
-      name: 'Contributions',
+      name: 'contributions',
       message: 'List the names of the contributer(s).',
     },
     {

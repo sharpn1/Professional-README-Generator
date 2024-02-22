@@ -1,16 +1,25 @@
-var licenseBadge;
-function getLicenseBadge(data) {
-  if (data.license === 'MIT') {
-    licenseBadge = `[License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)` 
-  }
-}
 
 // function to generate markdown for README
 function generateMarkdown(data) {
-  getLicenseBadge(data)
+  // getLicenseBadge(data)
+  console.log(data);
+  let licenseBadge = '';
+  switch (data.license) {
+    case 'MIT':
+      licenseBadge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+      break;
+    case 'Mozilla':
+      licenseBadge = `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`
+      break;
+    case 'Apache':
+      licenseBadge = `[![License: Apache](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
+      break;
+    default:
+      licenseBadge = '';
+  }
   return `
-  # ${data.title}
-  ${badge(data.license)}
+   ${data.title}
+  ${licenseBadge}
 
   ## Description
   ${data.description}
